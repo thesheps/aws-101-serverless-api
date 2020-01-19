@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@aws-cdk/aws-lambda": "^1.21.1"
+  }
+}
