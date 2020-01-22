@@ -26,9 +26,9 @@
 
 ---
 
-### INSTRUCTION!
+### Recipes!
 
-![IMAGE](assets/img/chef.png)
+![IMAGE](assets/img/chef.png&size=auto 90%)
 
 ---
 
