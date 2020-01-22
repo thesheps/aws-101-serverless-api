@@ -28,6 +28,6 @@
 
 ## The AWS Console
 
-- Point 'n' Click Infra.
-- Understand the things before you try and _code_ them.
-- Easy to create (and destroy!)
+@css[text-white fragment](- Point 'n' Click Infra)
+@css[text-white fragment](- Understand the things before you try and _code_ them)
+@css[text-white fragment](- Easy to create (and destroy!))
