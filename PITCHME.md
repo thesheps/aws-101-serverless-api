@@ -4,7 +4,7 @@
 
 ### Introduction
 
-![IMAGE](assets/img/cloud.png)
+![IMAGE](assets/img/cloud.jpg)
 
 ---
 
