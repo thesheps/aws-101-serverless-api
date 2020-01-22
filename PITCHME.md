@@ -28,7 +28,7 @@
 
 ### INSTRUCTION!
 
-![IMAGE](assets/img/chef.jpg)
+![IMAGE](assets/img/chef.png)
 
 ---
 
