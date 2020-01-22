@@ -1,4 +1,4 @@
-# AWS 101 - Serverless Apis
+# AWS 101: Serverless Apis
 
 ---
 
