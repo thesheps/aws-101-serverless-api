@@ -2,13 +2,13 @@
 
 ---
 
-### INTRODUCTION
+### INTRODUCTION!
 
 ![IMAGE](assets/img/cloud.jpg)
 
 ---
 
-### DISAMBIGUATION
+### DISAMBIGUATION!
 
 #### /dɪsamˈbɪɡjʊeɪt/ʃ(ə)n/
 
@@ -19,3 +19,21 @@
 @css[text-white fragment](API Gateway)
 
 ---
+
+### INTRODUCTION!
+
+![IMAGE](assets/img/cloud.jpg)
+
+---
+
+### INSTRUCTION!
+
+![IMAGE](assets/img/chef.jpg)
+
+---
+
+### The AWS Console
+
+- Point 'n' Click Infra.
+- Understand the things before you try and _code_ them.
+- Easy to create (and destroy!)
