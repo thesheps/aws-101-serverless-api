@@ -2,15 +2,15 @@
 
 ---
 
-### INTRODUCTION!
+## INTRODUCTION!
 
 ![IMAGE](assets/img/cloud.jpg)
 
 ---
 
-### DISAMBIGUATION!
+## DISAMBIGUATION!
 
-#### /dɪsamˈbɪɡjʊeɪt/ʃ(ə)n/
+### /dɪsamˈbɪɡjʊeɪt/ʃ(ə)n/
 
 @css[text-white fragment](AWS)
 @css[text-white fragment](Serverless)
@@ -20,19 +20,13 @@
 
 ---
 
-### INTRODUCTION!
-
-![IMAGE](assets/img/cloud.jpg)
-
----
-
-### RECIPES!
+## RECIPES!
 
 ![IMAGE](assets/img/chef.png)
 
 ---
 
-### The AWS Console
+## The AWS Console
 
 - Point 'n' Click Infra.
 - Understand the things before you try and _code_ them.
