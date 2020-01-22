@@ -26,8 +26,36 @@
 
 ---
 
-## The AWS Console
+## Recipe 01 - The AWS Console
 
-@css[text-white fragment](- Point 'n' Click Infra)
-@css[text-white fragment](- Understand the things before you try and _code_ them)
-@css[text-white fragment](- Easy to create (and destroy!))
+- Point 'n' Click Infra
+- Easy to create (and destroy!)
+- Understand before you code
+
+---
+
+## Recipe 02 - The AWS CLI
+
+- Reproducible
+- Automated
+- Version-controlled
+
+---
+
+## Recipe 03 - The AWS CDK
+
+- Programmatic
+- Portable
+- Unit Testable
+
+---
+
+## Recipe 04 - Terraform
+
+- Declarative
+- Agnostic
+- Stateful
+
+---
+
+## Thank you for coming to my TED Talk
