@@ -1,15 +1,10 @@
-# AWS 101: Serverless Apis
+# AWS 101: Serverless APIs
 
 ---
 
 ### Introduction
 
-![IMAGE](assets/img/placeholder.png)
-
----?color=linear-gradient(180deg, white 75%, black 25%)
-@title[Customize Slide Layout]
-
-@snap[west span-55]
+![IMAGE](assets/img/cloud.png)
 
 ---
 

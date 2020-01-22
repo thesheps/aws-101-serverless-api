@@ -132,7 +132,7 @@ Right now if we attach our `Lambda` to our `ApiGateway` unfortunately the defaul
 ```bash
 aws iam create-role \
     --role-name hello-world-api-gateway \
-    --assume-role-policy-document file://assets/api-gateway-execution-trust-policy.json
+    --assume-role-policy-document file://assets/code/api-gateway-execution-trust-policy.json
 ```
 
 **OUTPUT**:
@@ -154,7 +154,7 @@ aws iam create-role \
 ```bash
 aws iam create-policy \
     --policy-name invoke-lambda \
-    --policy-document file://assets/invoke-lambda-policy.json
+    --policy-document file://assets/code/invoke-lambda-policy.json
 ```
 
 **OUTPUT**:

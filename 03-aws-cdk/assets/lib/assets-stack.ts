@@ -14,7 +14,7 @@ export class AssetsStack extends Stack {
 
     const handler = new Function(this, "HelloWorldLambda", {
       functionName: "helloWorld",
-      code: Code.fromAsset("../../assets/hello-world.zip"),
+      code: Code.fromAsset("../../assets/code/hello-world.zip"),
       handler: "hello-world.handler",
       runtime: Runtime.NODEJS_12_X
     });

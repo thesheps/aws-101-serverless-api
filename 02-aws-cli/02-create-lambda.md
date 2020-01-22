@@ -41,7 +41,7 @@ As before this should reward you with a list of the functions currently deployed
 aws lambda create-function \
     --function-name helloWorld \
     --runtime nodejs12.x \
-    --zip-file fileb://assets/hello-world.zip \
+    --zip-file fileb://assets/code/hello-world.zip \
     --handler hello-world.handler
 ```
 
@@ -62,7 +62,7 @@ Hmm. Looks like the AWS console did this for us in the background in [Recipe #1]
 ```bash
 aws iam create-role \
     --role-name hello-world-lambda \
-    --assume-role-policy-document file://assets/lambda-execution-trust-policy.json
+    --assume-role-policy-document file://assets/code/lambda-execution-trust-policy.json
 ```
 
 If this is successful, you should see some output that looks similar to the following:
@@ -101,7 +101,7 @@ Having taken note of the Arn for the previous step, we can now revisit the Lambd
 aws lambda create-function \
     --function-name helloWorld \
     --runtime nodejs12.x \
-    --zip-file fileb://assets/hello-world.zip \
+    --zip-file fileb://assets/code/hello-world.zip \
     --handler hello-world.handler \
     --role arn:aws:iam::XXXXXXXXXXXX:role/hello-world
 ```

@@ -5,7 +5,7 @@ Now we've created all the roles and policies we need to support our `Lambda` and
 ```terraform
 # This block defines a Lambda function called helloWorld
 resource "aws_lambda_function" "hello_world" {
-  filename      = "../assets/hello-world.zip"
+  filename      = "../assets/code/hello-world.zip"
   function_name = "helloWorld"
   role          = aws_iam_role.lambda_execution_role.arn
   handler       = "hello-world.handler"
