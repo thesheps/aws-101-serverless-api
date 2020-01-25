@@ -6,7 +6,7 @@ Depending on your setup and flavour of package manager, you're either going to u
 
 ## Some Terminology
 
-We're gonna be talking about some very specific terms in these exercises which relate explicitly to `AWS CDK`. Let's take a few moment to understand what these are
+We're gonna be talking about some very specific terms in these exercises which relate explicitly to `AWS CDK`. Let's take a few moment to understand what these are!
 
 ### Constructs
 
