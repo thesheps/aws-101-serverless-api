@@ -36,7 +36,7 @@
 
 ### The Lambda
 
-> AWS Lambda lets you run code without provisioning or managing servers. You pay only for the compute time you consume.
+> ... lets you run code without provisioning or managing servers. You pay only for the compute time you consume.
 
 ---
 
@@ -51,6 +51,42 @@
 ![IMAGE](./01-aws-console/assets/img/lambda-success.png)
 
 ---
+
+### The Api Gateway
+
+> ... is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale.
+
+---
+
+![IMAGE](./01-aws-console/assets/img/api-gateway-home.png)
+
+---
+
+![IMAGE](./01-aws-console/assets/img/api-gateway-create.png)
+
+---
+
+![IMAGE](./01-aws-console/assets/img/api-gateway-proxy.png)
+
+---
+
+![IMAGE](./01-aws-console/assets/img/api-gateway-description.png)
+
+---
+
+```json
+{
+  "statusCode": 200,
+  "body": "\"Hello, World!\""
+}
+```
+
+---
+
+```bash
+$ curl https://XXXXXXXXXX.execute-api.eu-west-1.amazonaws.com/prod/
+"Hello, World!"
+```
 
 ## Recipe 02 - The AWS CLI
 
