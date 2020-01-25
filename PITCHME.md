@@ -100,7 +100,7 @@ $ curl https://XXXXXXXXXX.execute-api.eu-west-1.amazonaws.com/prod/
 
 ### Create the Lambda
 
-1. Create a Lambda Execution Role
+- Create a Lambda Execution Role
 
 ```bash
 aws iam create-role \
@@ -108,7 +108,7 @@ aws iam create-role \
     --assume-role-policy-document file://assets/code/lambda-execution-trust-policy.json
 ```
 
-2. Create Function
+- Create Function
 
 ```bash
 aws lambda create-function \
