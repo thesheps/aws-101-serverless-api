@@ -255,37 +255,51 @@ A `Construct` is defined of a logical grouping of related and connected AWS Reso
 
 ---
 
+### The Stack
+
 ```typescript
 export class AssetsStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
-
-    const handler = new Function(this, "HelloWorldLambda", {
-      functionName: "helloWorld",
-      code: Code.fromAsset("../../assets/code/hello-world.zip"),
-      handler: "hello-world.handler",
-      runtime: Runtime.NODEJS_12_X
-    });
-
-    const api = new RestApi(this, "HelloWorldApiGateway", {
-      restApiName: "Hello World",
-      endpointTypes: [EndpointType.REGIONAL]
-    });
-
-    const method = api.root.addMethod("ANY", new LambdaIntegration(handler));
-
-    const deployment = new Deployment(this, "TestDeployment", {
-      api
-    });
-
-    new Stage(this, "TestStage", {
-      stageName: "Test",
-      deployment
-    });
-
-    deployment.node.addDependency(method);
   }
 }
+```
+
+---
+
+### The Lambda
+
+```typescript
+const handler = new Function(this, "HelloWorldLambda", {
+  functionName: "helloWorld",
+  code: Code.fromAsset("../../assets/code/hello-world.zip"),
+  handler: "hello-world.handler",
+  runtime: Runtime.NODEJS_12_X
+});
+```
+
+---
+
+### The Rest API
+
+```typecript
+const api = new RestApi(this, "HelloWorldApiGateway", {
+  restApiName: "Hello World",
+  endpointTypes: [EndpointType.REGIONAL]
+});
+
+const method = api.root.addMethod("ANY", new LambdaIntegration(handler));
+
+const deployment = new Deployment(this, "TestDeployment", {
+  api
+});
+
+new Stage(this, "TestStage", {
+  stageName: "Test",
+  deployment
+});
+
+deployment.node.addDependency(method);
 ```
 
 ---
