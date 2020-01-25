@@ -282,7 +282,7 @@ const handler = new Function(this, "HelloWorldLambda", {
 
 ### The Rest API
 
-```typecript
+```typescript
 const api = new RestApi(this, "HelloWorldApiGateway", {
   restApiName: "Hello World",
   endpointTypes: [EndpointType.REGIONAL]
