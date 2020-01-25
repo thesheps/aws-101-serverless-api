@@ -16,7 +16,7 @@ theme-code       : [ "Inconsolata" ]
 theme-controls   : [ "#484848" ]
 theme-margins    : [ "0", "15px" ]
 
-highlight        : ir-black
+highlight        : monokai
 
 #
 # Highlight Setting

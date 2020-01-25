@@ -98,7 +98,7 @@ $ curl https://XXXXXXXXXX.execute-api.eu-west-1.amazonaws.com/prod/
 
 ---
 
-## Create the Lambda
+### Create the Lambda
 
 1. Create a Lambda Execution Role
 
