@@ -2,13 +2,13 @@
 
 Head to [the Api Gateway homepage](https://eu-west-1.console.aws.amazon.com/apigateway/home?region=eu-west-1#/apis/create) and select New Api. You should see something that looks like this:
 
-![API Gateway Homepage](./api-gateway-home.png)
+![API Gateway Homepage](./assets/img/api-gateway-home.png)
 
 :mega: **NOTE**: Make sure you're set to the region `eu-west-1` in the drop-down at the top-right of the screen! AWS supports many different geographical regions (think of each of them as being a data centre). For consistency we're gonna use `eu-west-1` (Dublin).
 
 Enter Hello World as your Api name, and ensure that REST is selected as your Protocol. We want a Regional Endpoint Type as opposed to it being `private` (only within your AWS network). Hit `Create API`.
 
-![API Gateway Create](./api-gateway-create.png)
+![API Gateway Create](./assets/img/api-gateway-create.png)
 
 ## Define HTTP Methods
 
@@ -24,7 +24,7 @@ Great! So what's next? We need to define a `Method` on our `Api Gateway` that we
 
 Presto, Chango!
 
-![API Gateway Proxy Configuration](./api-gateway-proxy.png)
+![API Gateway Proxy Configuration](./assets/img/api-gateway-proxy.png)
 
 Now things get interesting. This screen allows us to define how our `API Gateway` interacts with whatever other AWS Services we might want it to. In this case we're gonna accept the defaults, and type `helloWorld` in the Lambda Function textbox. With any luck this should auto-complete for you!
 
@@ -32,7 +32,7 @@ Now things get interesting. This screen allows us to define how our `API Gateway
 
 Hit Save! It's gonna warn you that your Api Gateway will be able to invoke your Lambda. That's kind of the point though, right?
 
-![API Gateway Description](./api-gateway-description.png)
+![API Gateway Description](./assets/img/api-gateway-description.png)
 
 The final screen shows you a lovely breakdown of your new HTTP method on your gateway, and how it's composed to integrate with your `helloWorld` Lambda! Hit the `TEST` lightning bolt and choose `GET` from the Method dropdown. You should be rewarded with a lovely response from your Lambda when you hit Test:
 

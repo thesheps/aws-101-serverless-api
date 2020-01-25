@@ -2,7 +2,7 @@
 
 Head to [the Lambda homepage](https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions). You should see something that looks like this:
 
-![Lambda Homepage](./lambda-home.png)
+![Lambda Homepage](./assets/img/lambda-home.png)
 
 :mega: **NOTE**: Make sure you're set to the region `eu-west-1` in the drop-down at the top-right of the screen! AWS supports many different geographical regions (think of each of them as being a data centre). For consistency we're gonna use `eu-west-1` (Dublin).
 
@@ -16,7 +16,7 @@ Head to [the Lambda homepage](https://eu-west-1.console.aws.amazon.com/lambda/ho
 
 The next screen is gonna look something like this:
 
-![Lambda Homepage](./lambda-create.png)
+![Lambda Homepage](./assets/img/lambda-create.png)
 
 It's actually given us everything we need to hook up to our API which is mega. Change the body to Hello World though, eh?
 
@@ -47,7 +47,7 @@ Let's create a test event to see if our basic Lambda is working.
 3. Hit the `Test` button again (note the dropdown next to the button now contains your test event)
 
 <center>
-<img src="./lambda-success.png" width="whatever" height="200">
+<img src="./assets/img/lambda-success.png" width="whatever" height="200">
 </center>
 
 Awesome. Now we have a function to return a response; let's define an `API Gateway` and have it route HTTP traffic to our Lambda!
