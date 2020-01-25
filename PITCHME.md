@@ -257,6 +257,8 @@ A `Construct` is defined of a logical grouping of related and connected AWS Reso
 
 ### The Stack
 
+@snap[text-left]
+
 #### Code
 
 ```typescript
@@ -266,6 +268,8 @@ export class AssetsStack extends Stack {
   }
 }
 ```
+
+@snapend
 
 ---
 
