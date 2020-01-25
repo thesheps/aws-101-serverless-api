@@ -88,6 +88,8 @@ $ curl https://XXXXXXXXXX.execute-api.eu-west-1.amazonaws.com/prod/
 "Hello, World!"
 ```
 
+---
+
 ## Recipe 02 - The AWS CLI
 
 - Reproducible
