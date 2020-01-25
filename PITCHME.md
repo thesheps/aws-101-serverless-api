@@ -332,13 +332,13 @@ deployment.node.addDependency(method);
 
 ### Imperative Vs. Declarative
 
-@snap[left]
+@snap[west span-40 text-center]
 
 #### Imperative
 
 @snapend
 
-@snap[right]
+@snap[east span-40 text-center]
 
 #### Declarative
 
