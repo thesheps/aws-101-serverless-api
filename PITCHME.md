@@ -334,9 +334,7 @@ deployment.node.addDependency(method);
 
 #### Imperative
 
-- Do this
-- Now do that
-- Now do the other
+Defines a series of steps to arrive at end state.
 
 @snapend
 
@@ -344,8 +342,7 @@ deployment.node.addDependency(method);
 
 #### Declarative
 
-- Defines end state
-- I want it to look like this
+Defines end goal, series of steps is generated.
 
 @snapend
 
