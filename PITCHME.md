@@ -127,6 +127,8 @@ aws lambda create-function \
 
 ### Create the Api Gateway
 
+@snap[text-left]
+
 1. Create the Rest API
 
 ```bash
@@ -152,7 +154,11 @@ aws apigateway put-method \
     --authorization-type NONE
 ```
 
+@snapend
+
 ---
+
+@snap[text-left]
 
 4. Define an Api Gateway Execution Role
 
@@ -170,7 +176,11 @@ aws iam create-policy \
     --policy-document file://assets/code/invoke-lambda-policy.json
 ```
 
+@snapend
+
 ---
+
+@snap[text-left]
 
 6. Attach the Policy to the Api Gateway Role
 
@@ -192,6 +202,10 @@ aws apigateway put-integration
     --credentials arn:aws:iam::XXXXXXXXXXXX:role/hello-world-api-gateway
     --uri arn:aws:apigateway:eu-west-1:lambda:path/2015-03-31/functions/arn:aws:lambda:eu-west-1:XXXXXXXXXXXX:function:helloWorld/invocations
 ```
+
+@snapend
+
+---
 
 ## Recipe 03 - The AWS CDK
 
