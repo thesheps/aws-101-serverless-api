@@ -247,9 +247,46 @@ Each `Stack` instance in your AWS CDK app is associated with an environment. An 
 
 A `Construct` is defined of a logical grouping of related and connected AWS Resources. This can be anything from an S3 bucket or (like in this workshop, an `ApiGateway` or `Lambda`)
 
+---
+
 ### Apps
 
 `Apps` are a grouping convention for _multiple_ constructs that may define an application
+
+---
+
+```typescript
+export class AssetsStack extends Stack {
+  constructor(scope: Construct, id: string, props?: StackProps) {
+    super(scope, id, props);
+
+    const handler = new Function(this, "HelloWorldLambda", {
+      functionName: "helloWorld",
+      code: Code.fromAsset("../../assets/code/hello-world.zip"),
+      handler: "hello-world.handler",
+      runtime: Runtime.NODEJS_12_X
+    });
+
+    const api = new RestApi(this, "HelloWorldApiGateway", {
+      restApiName: "Hello World",
+      endpointTypes: [EndpointType.REGIONAL]
+    });
+
+    const method = api.root.addMethod("ANY", new LambdaIntegration(handler));
+
+    const deployment = new Deployment(this, "TestDeployment", {
+      api
+    });
+
+    new Stage(this, "TestStage", {
+      stageName: "Test",
+      deployment
+    });
+
+    deployment.node.addDependency(method);
+  }
+}
+```
 
 ---
 
