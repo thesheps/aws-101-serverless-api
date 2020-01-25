@@ -100,6 +100,8 @@ $ curl https://XXXXXXXXXX.execute-api.eu-west-1.amazonaws.com/prod/
 
 ### Create the Lambda
 
+@snap[text-left]
+
 1. Create a Lambda Execution Role
 
 ```bash
@@ -118,6 +120,8 @@ aws lambda create-function \
     --handler hello-world.handler \
     --role arn:aws:iam::XXXXXXXXXXXX:role/hello-world
 ```
+
+@snapend
 
 ---
 
