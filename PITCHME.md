@@ -271,6 +271,8 @@ export class AssetsStack extends Stack {
 
 ### The Lambda
 
+@snap[text-left]
+
 #### Code
 
 ```typescript
@@ -282,9 +284,13 @@ const handler = new Function(this, "HelloWorldLambda", {
 });
 ```
 
+@snapend
+
 ---
 
 ### The Rest API
+
+@snap[text-left]
 
 #### Code
 
@@ -307,6 +313,8 @@ new Stage(this, "TestStage", {
 
 deployment.node.addDependency(method);
 ```
+
+@snapend
 
 ---
 
