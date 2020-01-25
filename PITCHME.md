@@ -330,4 +330,24 @@ deployment.node.addDependency(method);
 
 ---
 
-## Thank you for coming to my TED Talk
+### Imperative Vs. Declarative
+
+@snap[left]
+
+#### Imperative
+
+@snapend
+
+@snap[right]
+
+#### Declarative
+
+@snapend
+
+---
+
+## Questions?
+
+---
+
+## Thanks!
