@@ -74,14 +74,14 @@
 
 ---
 
+### Test Output
+
 ```json
 {
   "statusCode": 200,
   "body": "\"Hello, World!\""
 }
 ```
-
----
 
 ```bash
 $ curl https://XXXXXXXXXX.execute-api.eu-west-1.amazonaws.com/prod/
@@ -95,6 +95,10 @@ $ curl https://XXXXXXXXXX.execute-api.eu-west-1.amazonaws.com/prod/
 - Reproducible
 - Automated
 - Version-controlled
+
+---
+
+![All The Things](./assets/img/all-the-things.png)
 
 ---
 
@@ -212,6 +216,34 @@ aws apigateway put-integration
 - Programmatic
 - Portable
 - Unit Testable
+
+---
+
+## Some Terminology
+
+We're gonna be talking about some very specific terms in these exercises which relate explicitly to `AWS CDK`. Let's take a few moment to understand what these are!
+
+![Word Cloud](./assets/img/word-cloud.png)
+
+### Constructs
+
+`Constructs` are the basic building blocks of AWS CDK apps. A construct represents a "cloud component" and encapsulates everything AWS CloudFormation needs to create the component.
+
+### Environments
+
+Each `Stack` instance in your AWS CDK app is explicitly or implicitly associated with an environment `env`. An environment is the target AWS account and AWS Region into which the stack is intended to be deployed.
+
+### Resources
+
+A `Construct` is defined of a logical grouping of related and connected AWS Resources. This can be anything from an S3 bucket or (like in this workshop, an `ApiGateway` or `Lambda`)
+
+### Stacks
+
+The unit of deployment in the AWS CDK is called a `Stack`. All AWS resources defined within the scope of a stack, either directly or indirectly, are provisioned as a single unit. You can define any number of stacks in your AWS CDK app. Any instance of the Stack construct represents a `Stack`, and can be either defined directly within the scope of the app.
+
+### Apps
+
+As described in `Constructs`, to provision infrastructure resources, all constructs that represent AWS resources must be defined, directly or indirectly, within the scope of a `Stack` construct. `Apps` are a grouping convention for _multiple_ constructs that may define an application
 
 ---
 
