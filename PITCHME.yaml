@@ -5,24 +5,22 @@
 # Theme Template
 # Doc: https://gitpitch.com/docs/themes/default
 #
-theme            : template
+theme: template
 
-theme-background : [ "linear-gradient(to top, #6dd5ed, #2193b0)" ]
-theme-headline   : [ "Ubuntu", "white", "none" ]
-theme-byline     : [ "Ubuntu", "black", "none" ]
-theme-text       : [ "Raleway", "#F5FFFA", "none" ]
-theme-links      : [ "#0295BB", "#C0C0C0" ]
-theme-code       : [ "Inconsolata" ]
-theme-controls   : [ "#484848" ]
-theme-margins    : [ "0", "15px" ]
-
-highlight        : monokai
+theme-background: ["linear-gradient(to top, #6dd5ed, #2193b0)"]
+theme-headline: ["Ubuntu", "white", "none"]
+theme-byline: ["Ubuntu", "black", "none"]
+theme-text: ["Raleway", "#F5FFFA", "none"]
+theme-links: ["#0295BB", "#C0C0C0"]
+theme-code: ["Inconsolata"]
+theme-controls: ["#484848"]
+theme-margins: ["0", "15px"]
 
 #
 # Highlight Setting
 # Doc: https://gitpitch.com/docs/settings/highlight
 #
-highlight : tomorrow
+highlight: github-gist
 
 #
 # Theme-Override Setting
@@ -34,32 +32,31 @@ theme-override: assets/css/PITCHME.css
 # Logo Setting
 # https://gitpitch.com/docs/settings/logo
 #
-logo : assets/img/avatar.png
-logo-position : top-left
+logo: assets/img/avatar.png
+logo-position: top-left
 
 #
 # Layout Setting
 # Doc: https://gitpitch.com/docs/settings/layout
 #
-layout : center
+layout: center
 
 #
 # Footnote Setting
 # Doc: https://gitpitch.com/docs/settings/footnote
 #
-footnote : "GitPitch - The Fastest Way From Idea To Presentation"
+footnote: "GitPitch - The Fastest Way From Idea To Presentation"
 
 #
 # Published Setting
 # Doc: https://gitpitch.com/docs/settings/published
 #
-published : true
+published: true
 
 #
 # Twitter Card Settings [Pro Only]
 # Doc: https://gitpitch.com/docs/settings/twitter-card
 #
-title : "GitPitch In 60 Seconds"
-description : "A short tutorial introducing GitPitch Markdown Presentations for Developers."
-thumbnail : https://gitpitch.com/gpimg/tutorial-thumb.png
-
+title: "AWS-101: Serverless APIs"
+description: "An exploration of Serverless API technologies"
+thumbnail: https://gitpitch.com/gpimg/tutorial-thumb.png
