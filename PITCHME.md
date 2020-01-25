@@ -34,6 +34,24 @@
 
 ---
 
+### The Lambda
+
+> AWS Lambda lets you run code without provisioning or managing servers. You pay only for the compute time you consume.
+
+---
+
+![IMAGE](../01-aws-console/assets/img/lambda-home.png)
+
+---
+
+![IMAGE](../01-aws-console/assets/img/lambda-create.png)
+
+---
+
+![IMAGE](../01-aws-console/assets/img/lambda-success.png)
+
+---
+
 ## Recipe 02 - The AWS CLI
 
 - Reproducible
