@@ -98,7 +98,7 @@ $ curl https://XXXXXXXXXX.execute-api.eu-west-1.amazonaws.com/prod/
 
 ---
 
-<img src="./assets/img/all-the-things.png" height="50%" />
+<img src="./assets/img/all-the-things.png" height="300" />
 
 ---
 
