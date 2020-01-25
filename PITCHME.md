@@ -40,15 +40,15 @@
 
 ---
 
-![IMAGE](../01-aws-console/assets/img/lambda-home.png)
+![IMAGE](./01-aws-console/assets/img/lambda-home.png)
 
 ---
 
-![IMAGE](../01-aws-console/assets/img/lambda-create.png)
+![IMAGE](./01-aws-console/assets/img/lambda-create.png)
 
 ---
 
-![IMAGE](../01-aws-console/assets/img/lambda-success.png)
+![IMAGE](./01-aws-console/assets/img/lambda-success.png)
 
 ---
 
