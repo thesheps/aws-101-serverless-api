@@ -344,10 +344,8 @@ deployment.node.addDependency(method);
 
 #### Declarative
 
-- Do this
-- And that
-- And the other
-- Don't care how you get there
+- Defines end state
+- I want it to look like this
 
 @snapend
 
