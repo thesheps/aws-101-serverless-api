@@ -336,7 +336,7 @@ deployment.node.addDependency(method);
 
 - Do this
 - Now do that
-- Then do the other
+- Now do the other
 
 @snapend
 
@@ -344,8 +344,10 @@ deployment.node.addDependency(method);
 
 #### Declarative
 
-- Do this and that and the other
-- Work it out
+- Do this
+- And that
+- And the other
+- Don't care how you get there
 
 @snapend
 
