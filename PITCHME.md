@@ -257,6 +257,8 @@ A `Construct` is defined of a logical grouping of related and connected AWS Reso
 
 ### The Stack
 
+#### Code
+
 ```typescript
 export class AssetsStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
@@ -268,6 +270,8 @@ export class AssetsStack extends Stack {
 ---
 
 ### The Lambda
+
+#### Code
 
 ```typescript
 const handler = new Function(this, "HelloWorldLambda", {
@@ -281,6 +285,8 @@ const handler = new Function(this, "HelloWorldLambda", {
 ---
 
 ### The Rest API
+
+#### Code
 
 ```typescript
 const api = new RestApi(this, "HelloWorldApiGateway", {
