@@ -479,8 +479,6 @@ deployment.node.addDependency(method);
 
 ### Testing (that's right, testing!)
 
-#### Code
-
 ```typescript
 describe("Assets Stack", () => {
   const app = new cdk.App();
