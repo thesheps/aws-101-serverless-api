@@ -24,13 +24,13 @@ As with many other libraries and technologies there exist a number of different 
 
    - AWS provide us with some nice command line tools. Let's see if we can use them to recreate and deploy our API?
 
-3. AWS CDK
-
-   - Along with the CLI, AWS provide a **Cloud Development Kit**. You can use this library in a similar way to Terraforming your resources but _codifying_ the resource creation in `TypeScript`, `Python`, `C#` or `Java` instead of defining it in declarative blocks. This shift from declarative programming allows more programmatic patterns to be used - for example loops, if statements, Object Oriented Programming and other abstractions.
-
-4. Terraform
+3. Terraform
 
    - Terraform is an `Infrastructure-As-Code` state management framework which allows you to define AWS Resources as [declarative code blocks](https://en.wikipedia.org/wiki/Declarative_programming). This allows you to check your code into source code and easily replay your API into different environments (Dev/QA/Live).
+
+4. AWS CDK
+
+   - Along with the CLI, AWS provide a **Cloud Development Kit**. You can use this library in a similar way to Terraforming your resources but _codifying_ the resource creation in `TypeScript`, `Python`, `C#` or `Java` instead of defining it in declarative blocks. This shift from declarative programming allows more programmatic patterns to be used - for example loops, if statements, Object Oriented Programming and other abstractions.
 
 ## Pre-Flight Checklist
 
