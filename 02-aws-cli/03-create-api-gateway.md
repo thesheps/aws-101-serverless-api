@@ -239,4 +239,4 @@ Well done for making it this far! The purpose of this exercise was to drive home
 
 The next few exercises explore `AWS Abstractions`. In answer to the complexities of AWS resource creation there now exist a number of so-called `IaC` (**I**nfrastructure **A**s **C**ode) libraries that hide away a lot of these underlying API calls, instead allowing you to concentrate on _Building The Solution_, rather than having to write an infinite amount of shell scripts...
 
-[Get cracking!](../03-aws-cdk)
+[Get cracking!](../04-aws-cdk)

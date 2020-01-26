@@ -247,7 +247,114 @@ aws apigateway put-integration
 
 ---
 
-## Recipe 03 - The AWS CDK
+## Recipe 03 - Terraform
+
+- Declarative
+- Agnostic(ish)
+- Stateful
+
+---
+
+@snap[west span-40 text-center]
+
+#### Imperative
+
+Defines a series of steps to arrive at end state.
+
+@snapend
+
+@snap[east span-40 text-center]
+
+#### Declarative
+
+Defines end state. Computer works out how to get there.
+
+@snapend
+
+---
+
+## What is Terraform?
+
+> ... enables users to define and provision data center infrastructure using a high-level configuration language.
+
+---
+
+## Codetime
+
+<img src="./assets/img/hackerman.jpg" height="300" />
+
+---
+
+### The Lambda
+
+@snap[text-left]
+
+#### Code
+
+```terraform
+resource "aws_lambda_function" "hello_world" {
+  filename      = "../assets/code/hello-world.zip"
+  function_name = "helloWorld"
+  role          = aws_iam_role.lambda_execution_role.arn
+  handler       = "hello-world.handler"
+  runtime       = "nodejs12.x"
+}
+```
+
+@snapend
+
+---
+
+### The Rest API
+
+@snap[text-left]
+
+#### Code
+
+```terraform
+resource "aws_api_gateway_rest_api" "hello_world" {
+  name = "Hello World"
+
+  endpoint_configuration {
+    types = ["REGIONAL"]
+  }
+}
+
+resource "aws_api_gateway_method" "any" {
+  rest_api_id   = aws_api_gateway_rest_api.hello_world.id
+  resource_id   = aws_api_gateway_rest_api.hello_world.root_resource_id
+  http_method   = "ANY"
+  authorization = "NONE"
+}
+```
+
+@snapend
+
+---
+
+### The Lambda Integration
+
+@snap[text-left]
+
+#### Code
+
+```terraform
+resource "aws_api_gateway_integration" "lambda" {
+  rest_api_id             = aws_api_gateway_rest_api.hello_world.id
+  resource_id             = aws_api_gateway_rest_api.hello_world.root_resource_id
+  http_method             = aws_api_gateway_method.any.http_method
+  integration_http_method = "POST"
+  type                    = "AWS_PROXY"
+  uri                     = "arn:aws:apigateway:${var.region}:lambda:path/2015-03-31/functions/${aws_lambda_function.hello_world.arn}/invocations"
+  credentials             = aws_iam_role.apigateway_execution_role.arn
+}
+```
+
+@snapend
+
+---
+
+## Recipe 04 - The AWS CDK
 
 - Programmatic
 - Portable
@@ -392,113 +499,6 @@ describe("Assets Stack", () => {
   });
 });
 ```
-
----
-
-## Recipe 04 - Terraform
-
-- Declarative
-- Agnostic(ish)
-- Stateful
-
----
-
-@snap[west span-40 text-center]
-
-#### Imperative
-
-Defines a series of steps to arrive at end state.
-
-@snapend
-
-@snap[east span-40 text-center]
-
-#### Declarative
-
-Defines end state. Computer works out how to get there.
-
-@snapend
-
----
-
-## What is Terraform?
-
-> ... enables users to define and provision data center infrastructure using a high-level configuration language.
-
----
-
-## Codetime
-
-<img src="./assets/img/hackerman.jpg" height="300" />
-
----
-
-### The Lambda
-
-@snap[text-left]
-
-#### Code
-
-```terraform
-resource "aws_lambda_function" "hello_world" {
-  filename      = "../assets/code/hello-world.zip"
-  function_name = "helloWorld"
-  role          = aws_iam_role.lambda_execution_role.arn
-  handler       = "hello-world.handler"
-  runtime       = "nodejs12.x"
-}
-```
-
-@snapend
-
----
-
-### The Rest API
-
-@snap[text-left]
-
-#### Code
-
-```terraform
-resource "aws_api_gateway_rest_api" "hello_world" {
-  name = "Hello World"
-
-  endpoint_configuration {
-    types = ["REGIONAL"]
-  }
-}
-
-resource "aws_api_gateway_method" "any" {
-  rest_api_id   = aws_api_gateway_rest_api.hello_world.id
-  resource_id   = aws_api_gateway_rest_api.hello_world.root_resource_id
-  http_method   = "ANY"
-  authorization = "NONE"
-}
-```
-
-@snapend
-
----
-
-### The Lambda Integration
-
-@snap[text-left]
-
-#### Code
-
-```terraform
-resource "aws_api_gateway_integration" "lambda" {
-  rest_api_id             = aws_api_gateway_rest_api.hello_world.id
-  resource_id             = aws_api_gateway_rest_api.hello_world.root_resource_id
-  http_method             = aws_api_gateway_method.any.http_method
-  integration_http_method = "POST"
-  type                    = "AWS_PROXY"
-  uri                     = "arn:aws:apigateway:${var.region}:lambda:path/2015-03-31/functions/${aws_lambda_function.hello_world.arn}/invocations"
-  credentials             = aws_iam_role.apigateway_execution_role.arn
-}
-```
-
-@snapend
 
 ---
 

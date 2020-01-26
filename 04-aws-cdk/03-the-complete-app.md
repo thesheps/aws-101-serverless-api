@@ -122,4 +122,4 @@ Again you'll see a bunch of output from `CloudFormation` here as AWS works out w
 
 The `AWS CDK` is just one of example of a number of similar infrastructure-as-code frameworks out there which manages the overhead of tracking infrastructure state and working out what changes need to be made in order to reach a desired end state. In the next exercise we'll take a dive into `Terraform` - An Infrastructure as Code tool which doesn't rely on `CloudFormation` to manage your infrastructure!
 
-[Go here to continue your journey!](../04-terraform)
+[Go here to continue your journey!](../03-terraform)
