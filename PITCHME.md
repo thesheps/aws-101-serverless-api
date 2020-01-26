@@ -370,6 +370,31 @@ deployment.node.addDependency(method);
 
 ---
 
+### Testing (that's right, testing!)
+
+#### Code
+
+```typescript
+describe("Assets Stack", () => {
+  const app = new cdk.App();
+  const stack = new Assets.AssetsStack(app, "MyTestStack");
+
+  describe("Lambda", () => {
+    it("has a Lambda named helloWorld", () => {
+      expect(stack).to(
+        haveResource("AWS::Lambda::Function", {
+          FunctionName: "helloWorld",
+          Handler: "hello-world.handler",
+          Runtime: "nodejs12.x"
+        })
+      );
+    });
+  });
+});
+```
+
+---
+
 ## Recipe 04 - Terraform
 
 - Declarative
