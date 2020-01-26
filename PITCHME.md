@@ -20,6 +20,30 @@
 
 ---
 
+### AWS
+
+---
+
+### Serverless
+
+---
+
+### IAM
+
+---
+
+### Lambda
+
+> ... lets you run code without provisioning or managing servers. You pay only for the compute time you consume.
+
+---
+
+### Api Gateway
+
+> ... is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale.
+
+---
+
 ## RECIPES!
 
 ![IMAGE](assets/img/chef.png)
@@ -34,41 +58,43 @@
 
 ---
 
-### The Lambda
-
-> ... lets you run code without provisioning or managing servers. You pay only for the compute time you consume.
-
----
+### Creating the Lambda
 
 ![IMAGE](./01-aws-console/assets/img/lambda-home.png)
 
 ---
 
+### Creating the Lambda
+
 ![IMAGE](./01-aws-console/assets/img/lambda-create.png)
 
 ---
+
+### Creating the Lambda
 
 ![IMAGE](./01-aws-console/assets/img/lambda-success.png)
 
 ---
 
-### The Api Gateway
-
-> ... is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale.
-
----
+### Creating the Api Gateway
 
 ![IMAGE](./01-aws-console/assets/img/api-gateway-home.png)
 
 ---
 
+### Creating the Api Gateway
+
 ![IMAGE](./01-aws-console/assets/img/api-gateway-create.png)
 
 ---
 
+### Creating the Api Gateway
+
 ![IMAGE](./01-aws-console/assets/img/api-gateway-proxy.png)
 
 ---
+
+### Creating the Api Gateway
 
 ![IMAGE](./01-aws-console/assets/img/api-gateway-description.png)
 
