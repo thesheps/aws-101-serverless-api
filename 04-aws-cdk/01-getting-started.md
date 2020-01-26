@@ -83,4 +83,4 @@ Conditions:
 
 :mega: **NOTE**: The above text is `CloudFormation`. This is an AWS service that we've not come across just yet, but underpins a _lot_ of how AWS services are created and orchestrated. Think of it as a recipe for defining infrastructure, although instead of mixing the wet ingredients together and whisking them into the dry; here we define a bunch of AWS services and how they're wired together.
 
-If your output looks similar to the above: [go here to continue your journey!](./02-the-stack.md). If not, shout at whomever is running your session and get them to fix it :balloon:
+If your output looks similar to the above: [go here to continue your journey!](./02-the-stack.md) If not, shout at whomever is running your session and get them to fix it :balloon:
