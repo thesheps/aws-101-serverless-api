@@ -14,21 +14,21 @@
 
 @css[text-white fragment](AWS)
 @css[text-white fragment](Serverless)
-@css[text-white fragment](IAM)
 @css[text-white fragment](Lambda)
-@css[text-white fragment](API Gateway)
+@css[text-white fragment](Api Gateway)
+@css[text-white fragment](IAM)
 
 ---
 
 ### AWS
 
+> ... provides on-demand cloud computing platforms and APIs to individuals, companies, and governments, on a metered pay-as-you-go basis.
+
 ---
 
 ### Serverless
 
----
-
-### IAM
+> ... a cloud-computing execution model in which the cloud provider runs the server, and dynamically manages the allocation of machine resource.
 
 ---
 
@@ -41,6 +41,12 @@
 ### Api Gateway
 
 > ... is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale.
+
+---
+
+### IAM
+
+> ... AWS Identity and Access Management (IAM) enables you to manage access to AWS services and resources securely.
 
 ---
 
@@ -58,49 +64,49 @@
 
 ---
 
-### Creating the Lambda
+#### Creating the Lambda
 
 ![IMAGE](./01-aws-console/assets/img/lambda-home.png)
 
 ---
 
-### Creating the Lambda
+#### Creating the Lambda
 
 ![IMAGE](./01-aws-console/assets/img/lambda-create.png)
 
 ---
 
-### Creating the Lambda
+#### Creating the Lambda
 
 ![IMAGE](./01-aws-console/assets/img/lambda-success.png)
 
 ---
 
-### Creating the Api Gateway
+#### Creating the Api Gateway
 
 ![IMAGE](./01-aws-console/assets/img/api-gateway-home.png)
 
 ---
 
-### Creating the Api Gateway
+#### Creating the Api Gateway
 
 ![IMAGE](./01-aws-console/assets/img/api-gateway-create.png)
 
 ---
 
-### Creating the Api Gateway
+#### Creating the Api Gateway
 
 ![IMAGE](./01-aws-console/assets/img/api-gateway-proxy.png)
 
 ---
 
-### Creating the Api Gateway
+#### Creating the Api Gateway
 
 ![IMAGE](./01-aws-console/assets/img/api-gateway-description.png)
 
 ---
 
-### Test Output
+#### Test Output
 
 ```json
 {
